@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>block inline exercise</title>
+    <style>
+      div {
+        width: 150px;
+        height: 150px;
+        padding: 15px;
+      }
+
+      div.position-absolute {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      #first {
+        background-color: thistle;
+      }
+
+      #second {
+        background-color: lightblue;
+      }
+
+      #third {
+        background-color: lightgoldenrodyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="position-absolute">
+      <div id="first">
+        <div id="second">
+          <div id="third"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
